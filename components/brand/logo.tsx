@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { cn } from '@/lib/utils';
 
 type LogoProps = {
@@ -10,9 +11,11 @@ export function Logo({ className, variant = 'full', monochrome = false }: LogoPr
   return (
     <div className={cn('inline-flex items-center', className)}>
       {variant === 'full' ? (
-        <img
+        <Image
           src="/logo.svg"
           alt="Germaniya Live"
+          width={200}
+          height={40}
           className="h-10 w-auto"
           style={monochrome ? { filter: 'grayscale(1)' } : undefined}
         />
@@ -31,9 +34,11 @@ export function LogoMark({
   monochrome?: boolean;
 }) {
   return (
-    <img
+    <Image
       src="/logo.svg"
       alt="Germaniya Live"
+      width={160}
+      height={32}
       className={cn('h-8 w-auto', className)}
       style={monochrome ? { filter: 'grayscale(1)' } : undefined}
     />

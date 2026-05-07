@@ -1,0 +1,337 @@
+{
+  "nav": {
+    "home": "Bosh sahifa",
+    "services": "Xizmatlar",
+    "cases": "Loyihalar",
+    "about": "Biz haqimizda",
+    "contact": "Aloqa",
+    "login": "Kirish",
+    "startProject": "Loyiha boshlash",
+    "openMenu": "Menyuni ochish",
+    "closeMenu": "Menyuni yopish"
+  },
+  "hero": {
+    "eyebrow": "ITGroup · Germaniya Live",
+    "title": "Biznesingizni keyingi pog'onaga olib chiqamiz",
+    "subtitle": "CRM, ERP, mobil ilovalar, web platformalar, Telegram botlar va sun'iy intellekt yechimlari — bitta jamoadan, bitta natijaga.",
+    "primary": "Loyiha boshlash",
+    "secondary": "Xizmatlarni ko'rish",
+    "stats": {
+      "clients": "Mijozlar",
+      "projects": "Yetkazilgan loyihalar",
+      "uptime": "Uptime SLA",
+      "support": "Qo'llab-quvvatlash"
+    }
+  },
+  "trust": {
+    "label": "Mijozlarimiz va texnologik hamkorlarimiz"
+  },
+  "services": {
+    "eyebrow": "Xizmatlar",
+    "title": "Bizning xizmatlarimiz",
+    "description": "Strategiyadan operatsiyaga qadar — har bir mahsulot inkubatsiyada emas, ishlab chiqarishda tug'iladi.",
+    "learnMore": "Batafsil",
+    "items": {
+      "crm": {
+        "title": "CRM tizimlari",
+        "tagline": "Sotuv jamoasi uchun bitta haqiqat manbai",
+        "description": "Lidlardan to'lovgacha — sotuv tunnelining har bir bosqichini boshqaradigan, real vaqtda yangilanadigan CRM."
+      },
+      "erp": {
+        "title": "ERP yechimlari",
+        "tagline": "Bo'limlararo bitta tizim, bitta haqiqat",
+        "description": "Moliya, ombor, HR va xaridlarni bitta arxitekturada birlashtiradigan modulli ERP platformalari."
+      },
+      "mobile": {
+        "title": "Mobil ilovalar",
+        "tagline": "iOS va Android — bitta jamoa, ikki platforma",
+        "description": "Native va cross-platform mobil ilovalar — push, offline rejim, to'lov SDK va biometrika integratsiyalari bilan."
+      },
+      "web": {
+        "title": "Saytlar va web platformalar",
+        "tagline": "Marketingdan SaaS dashbordlargacha",
+        "description": "Mahsulot saytlari, ichki paneller va katta yuklamali web platformalar — tezkor, xavfsiz va SEO uchun tayyor."
+      },
+      "telegram-bots": {
+        "title": "Telegram botlar",
+        "tagline": "WebApp va to'lov tizimli botlar",
+        "description": "Click, Payme va Stripe bilan to'lov qabul qiladigan, WebApp interfeyslari bo'lgan zamonaviy Telegram botlar."
+      },
+      "ai": {
+        "title": "AI integratsiyalar",
+        "tagline": "Mahsulot ichida sun'iy intellekt",
+        "description": "LLM-asosli chat, hujjat bo'yicha savol-javob (RAG), ovozli agentlar va biznes-jarayonlarni avtomatlashtirish."
+      }
+    }
+  },
+  "process": {
+    "eyebrow": "Jarayon",
+    "title": "Loyihalarni qanday yetkazamiz",
+    "description": "Shaffof, oldindan aytib bo'ladigan va biznes maqsadiga bog'langan jarayon.",
+    "steps": {
+      "discovery": { "title": "Tadqiqot", "description": "Biznes maqsadini, foydalanuvchini va konstruktiv chegaralarni aniqlaymiz." },
+      "design": { "title": "Dizayn", "description": "UX arxitekturasi, prototip va vizual tizim — yetkazilishidan oldin tasdiqlanadi." },
+      "build": { "title": "Ishlab chiqish", "description": "Sprintlar va shaffof demolar — har 2 hafta yangi versiya." },
+      "launch": { "title": "Ishga tushirish", "description": "Ishonchli deploy, monitoring, jamoangizni o'qitish." },
+      "care": { "title": "Qo'llab-quvvatlash", "description": "SLA, mahsulotni o'sib borishi, yangi modullar — biz bilan birga." }
+    }
+  },
+  "stats": {
+    "eyebrow": "Raqamlar",
+    "title": "Sifat raqamlar bilan o'lchanadi",
+    "items": {
+      "years": "Bozorda",
+      "projects": "Loyihalar",
+      "countries": "Davlatlar",
+      "team": "Jamoa a'zolari"
+    }
+  },
+  "cases": {
+    "eyebrow": "Loyihalar",
+    "title": "Tanlangan ishlar",
+    "description": "Real biznesga real natija. Quyidagilar — biz ishongan jamoalar bilan birgalikda yetkazgan mahsulotlar.",
+    "viewAll": "Barcha loyihalar",
+    "viewCase": "Loyihani ochish"
+  },
+  "why": {
+    "eyebrow": "Nega biz",
+    "title": "Nega ITGroup",
+    "items": {
+      "senior": { "title": "Senior jamoa", "description": "Junior maktabi emas — ishlab chiqarishda yetilgan muhandislar va dizaynerlar." },
+      "transparent": { "title": "Shaffof jarayon", "description": "Real-time taraqqiyot, ochiq backlog, oldindan aytib bo'ladigan smeta." },
+      "support": { "title": "Ishga tushirishdan keyin ham", "description": "Mahsulot ishga tushgandan so'ng siz bilan qolamiz — SLA va o'sish bilan." },
+      "global": { "title": "EU + UZ joylashuv", "description": "Toshkent va Berlin ofislari — yaqin maslahat, global standartlar." },
+      "flexible": { "title": "Moslashuvchan model", "description": "Fixed-price, T&M yoki dedicated team — siz uchun qulay format." },
+      "secure": { "title": "Xavfsizlik birinchi", "description": "NDA, GDPR, ISO 27001 amaliyotlari — kod va ma'lumot xavfsizligi." }
+    }
+  },
+  "testimonials": {
+    "eyebrow": "Mijozlar",
+    "title": "Mijozlar nima deydi",
+    "items": {
+      "1": {
+        "quote": "ITGroup ERP-ni 11 hafta ichida ishga tushirdi — ilgari biz buni yil deb hisoblardik.",
+        "author": "Bekzod Rahimov",
+        "role": "COO, TransLogix"
+      },
+      "2": {
+        "quote": "Biz CRM emas, sotuv operatsiyamizni qaytadan oldik. Konversiya 42% ga o'sdi.",
+        "author": "Nodira Yusupova",
+        "role": "Sales Director, Markaz Market"
+      },
+      "3": {
+        "quote": "WebApp + Click + Payme — birinchi haftada 12 mingdan ortiq foydalanuvchi.",
+        "author": "Anvar Karimov",
+        "role": "CTO, TenzorPay"
+      }
+    }
+  },
+  "cta": {
+    "eyebrow": "Boshlaymizmi?",
+    "title": "Mahsulotingizni biz bilan birga quring",
+    "description": "30 daqiqali bepul konsultatsiya — texnik baholash, smeta va to'g'ri jamoa.",
+    "primary": "Bepul konsultatsiya",
+    "secondary": "Telegram orqali yozish"
+  },
+  "footer": {
+    "tagline": "Biznesni texnologiya bilan birlashtiramiz.",
+    "company": "Kompaniya",
+    "services": "Xizmatlar",
+    "contact": "Aloqa",
+    "newsletter": "Yangiliklar",
+    "newsletterDesc": "Oyiga bir marta — yangi loyihalar, fikrlar, kuzatuvlar.",
+    "subscribe": "Obuna bo'lish",
+    "rights": "Barcha huquqlar himoyalangan.",
+    "privacy": "Maxfiylik",
+    "terms": "Shartlar"
+  },
+  "service": {
+    "backToServices": "Xizmatlarga qaytish",
+    "deliverables": "Nimani qurmiz",
+    "stack": "Texnologik stack",
+    "process": "Jarayon",
+    "startProject": "Shu xizmatni buyurtma qilish"
+  },
+  "contact": {
+    "eyebrow": "Buyurtma",
+    "title": "Xizmatga buyurtma berish",
+    "description": "Xizmatni tanlang va kontaktingizni qoldiring — 24 soat ichida bog'lanamiz.",
+    "form": {
+      "stepService": "Xizmatni tanlang",
+      "stepContact": "Kontakt ma'lumotlari",
+      "firstName": "Ism",
+      "firstNamePlaceholder": "Jamshid",
+      "lastName": "Familiya",
+      "lastNamePlaceholder": "Karimov",
+      "phone": "Telefon raqam",
+      "phonePlaceholder": "90 123 45 67",
+      "description": "Qisqacha tavsif",
+      "descriptionOptional": "ixtiyoriy",
+      "descriptionPlaceholder": "Loyihangiz, byudjet yoki muddat haqida qisqacha yozing...",
+      "descriptionPlaceholderOther": "Sizga qanday yechim kerakligini batafsil yozing...",
+      "other": "Boshqa",
+      "otherTagline": "Yuqoridagi xizmatlardan biriga to'g'ri kelmasa",
+      "submit": "Buyurtma qoldirish",
+      "sending": "Yuborilmoqda...",
+      "successTitle": "Rahmat!",
+      "successDesc": "Murojaatingizni qabul qildik. 24 soat ichida bog'lanamiz.",
+      "newOrder": "Yangi buyurtma",
+      "validation": {
+        "service": "Iltimos, xizmatni tanlang",
+        "firstName": "Ismingizni kiriting (kamida 2 ta harf)",
+        "lastName": "Familiyangizni kiriting (kamida 2 ta harf)",
+        "phone": "To'g'ri telefon raqam kiriting"
+      }
+    },
+    "channels": {
+      "title": "Bog'lanish kanallari",
+      "phone": "Telefon",
+      "telegram": "Telegram",
+      "instagram": "Instagram",
+      "email": "Email"
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Xush kelibsiz",
+      "subtitle": "Davom etish uchun hisobga kiring",
+      "email": "Email",
+      "password": "Parol",
+      "submit": "Kirish",
+      "forgot": "Parolni unutdingizmi?",
+      "noAccount": "Hisobingiz yo'qmi?",
+      "register": "Ro'yxatdan o'tish"
+    },
+    "register": {
+      "title": "Hisob yarating",
+      "subtitle": "Bir daqiqada boshlang",
+      "name": "To'liq ism",
+      "email": "Email",
+      "password": "Parol",
+      "submit": "Ro'yxatdan o'tish",
+      "haveAccount": "Hisobingiz bormi?",
+      "login": "Kirish"
+    }
+  },
+  "about": {
+    "eyebrow": "Biz haqimizda",
+    "title": "Texnologiya — bizning tilimiz, biznes — sizning",
+    "lead": "ITGroup — O'zbekiston va Germaniyada joylashgan dasturiy ta'minot studiyasi. Biz CRM, ERP, mobil ilova, sayt, Telegram bot va AI integratsiyalarini muhandislik darajasida quramiz.",
+    "mission": {
+      "title": "Bizning vazifamiz",
+      "description": "O'rta va katta biznesga texnologiyani sodda, ishonchli va tezda yetkazish — ortiqcha gapirmasdan."
+    },
+    "values": {
+      "title": "Qadriyatlarimiz",
+      "items": {
+        "craft": { "title": "Hunar", "description": "Har bir piksel, har bir endpoint — o'ylangan." },
+        "ownership": { "title": "Mas'uliyat", "description": "Kod yetkazib bermaymiz — natija yetkazib beramiz." },
+        "speed": { "title": "Tezlik", "description": "Sifatli, ammo tez. Sprint — odatiy ritm." },
+        "honesty": { "title": "Halollik", "description": "Smeta, deadline va imkoniyatlar haqida to'g'ri gapiramiz." }
+      }
+    },
+    "team": {
+      "title": "Jamoa",
+      "description": "Senior muhandislar, dizaynerlar va mahsulot menejerlari — bir o'rtacha hajmdagi loyihaga 4–8 odam."
+    }
+  },
+  "casesPage": {
+    "eyebrow": "Loyihalar",
+    "title": "Mijozlar bilan birga qurganlarimiz",
+    "filterAll": "Hammasi"
+  },
+  "admin": {
+    "sidebar": {
+      "main": "Asosiy",
+      "management": "Boshqaruv",
+      "dashboard": "Boshqaruv paneli",
+      "leads": "Murojaatlar",
+      "clients": "Mijozlar",
+      "projects": "Loyihalar",
+      "users": "Foydalanuvchilar",
+      "settings": "Sozlamalar",
+      "logout": "Chiqish"
+    },
+    "topbar": {
+      "search": "Qidirish...",
+      "notifications": "Bildirishnomalar"
+    },
+    "dashboard": {
+      "title": "Boshqaruv paneli",
+      "subtitle": "Real-time biznes ko'rsatkichlari",
+      "stats": {
+        "leads": "Jami murojaatlar",
+        "newWeek": "Bu hafta yangi",
+        "inProgress": "Jarayonda",
+        "closed": "Yopilgan"
+      },
+      "recentLeads": "Oxirgi murojaatlar",
+      "viewAll": "Hammasini ko'rish",
+      "leadsOverTime": "Murojaatlar dinamikasi",
+      "serviceMix": "Xizmatlar bo'yicha"
+    },
+    "leads": {
+      "title": "Murojaatlar",
+      "subtitle": "Sotuv tunneli — barcha bosqichlar",
+      "search": "Telefon, ism, email yoki xizmat...",
+      "tabs": {
+        "all": "Hammasi",
+        "new": "Yangi",
+        "contacted": "Bog'langan",
+        "qualified": "Saralangan",
+        "inProgress": "Jarayonda",
+        "won": "Yutilgan",
+        "lost": "Yo'qotilgan"
+      },
+      "view": { "table": "Jadval", "kanban": "Kanban" },
+      "table": {
+        "id": "ID",
+        "client": "Mijoz",
+        "service": "Xizmat",
+        "source": "Manba",
+        "date": "Sana",
+        "status": "Holat",
+        "actions": "Amallar"
+      },
+      "drawer": {
+        "contact": "Aloqa ma'lumotlari",
+        "request": "So'rov",
+        "status": "Holat",
+        "comments": "Ichki izohlar",
+        "timeline": "Vaqt jadvali",
+        "save": "Saqlash"
+      }
+    },
+    "users": {
+      "title": "Foydalanuvchilar",
+      "subtitle": "Jamoa va kirish huquqlari",
+      "addUser": "Yangi foydalanuvchi",
+      "search": "Ism yoki email...",
+      "table": {
+        "name": "Ism",
+        "email": "Email",
+        "role": "Rol",
+        "status": "Holat",
+        "created": "Yaratilgan",
+        "actions": "Amallar"
+      }
+    },
+    "settings": {
+      "title": "Sozlamalar",
+      "subtitle": "Hisob, xavfsizlik va bildirishnomalar",
+      "profile": "Profil",
+      "security": "Xavfsizlik",
+      "notifications": "Bildirishnomalar",
+      "appearance": "Ko'rinish",
+      "save": "Saqlash"
+    }
+  },
+  "common": {
+    "loading": "Yuklanmoqda...",
+    "back": "Orqaga",
+    "next": "Keyingi",
+    "previous": "Oldingi",
+    "viewMore": "Ko'proq ko'rish",
+    "comingSoon": "Tez orada"
+  }
+}

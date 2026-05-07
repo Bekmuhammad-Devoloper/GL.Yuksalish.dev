@@ -1,0 +1,337 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "cases": "Cases",
+    "about": "About",
+    "contact": "Contact",
+    "login": "Sign in",
+    "startProject": "Start a project",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "hero": {
+    "eyebrow": "ITGroup · Germaniya Live",
+    "title": "Take your business to the next level",
+    "subtitle": "CRM, ERP, mobile apps, web platforms, Telegram bots and AI integrations — one team, one outcome.",
+    "primary": "Start a project",
+    "secondary": "Explore services",
+    "stats": {
+      "clients": "Clients",
+      "projects": "Projects shipped",
+      "uptime": "Uptime SLA",
+      "support": "Support"
+    }
+  },
+  "trust": {
+    "label": "Trusted by clients and tech partners"
+  },
+  "services": {
+    "eyebrow": "Services",
+    "title": "What we build",
+    "description": "From strategy to operations — products are born in production, not in incubation.",
+    "learnMore": "Learn more",
+    "items": {
+      "crm": {
+        "title": "CRM systems",
+        "tagline": "A single source of truth for sales",
+        "description": "From lead to payment — a real-time CRM that runs every stage of your sales funnel."
+      },
+      "erp": {
+        "title": "ERP solutions",
+        "tagline": "One system across departments",
+        "description": "Modular ERP platforms unifying finance, warehousing, HR and procurement in one architecture."
+      },
+      "mobile": {
+        "title": "Mobile applications",
+        "tagline": "iOS and Android — one team, two platforms",
+        "description": "Native and cross-platform apps with push, offline, payment SDKs and biometrics."
+      },
+      "web": {
+        "title": "Websites & web platforms",
+        "tagline": "From marketing to SaaS dashboards",
+        "description": "Product sites, internal consoles and high-load platforms — fast, secure, SEO-ready."
+      },
+      "telegram-bots": {
+        "title": "Telegram bots",
+        "tagline": "WebApp and payment-ready bots",
+        "description": "Modern bots with WebApp UIs and Click, Payme and Stripe payment flows."
+      },
+      "ai": {
+        "title": "AI integrations",
+        "tagline": "Intelligence inside the product",
+        "description": "LLM-powered chat, document Q&A (RAG), voice agents and business-process automation."
+      }
+    }
+  },
+  "process": {
+    "eyebrow": "Process",
+    "title": "How we ship projects",
+    "description": "A transparent, predictable process tied to your business outcome.",
+    "steps": {
+      "discovery": { "title": "Discovery", "description": "We define the goal, the user and the constructive constraints." },
+      "design": { "title": "Design", "description": "UX architecture, prototype and visual system — approved before build." },
+      "build": { "title": "Build", "description": "Sprints and transparent demos — a new version every two weeks." },
+      "launch": { "title": "Launch", "description": "Reliable deploy, monitoring, training your team." },
+      "care": { "title": "Care", "description": "SLA, product growth, new modules — together with us." }
+    }
+  },
+  "stats": {
+    "eyebrow": "Numbers",
+    "title": "Quality measured in numbers",
+    "items": {
+      "years": "Years on market",
+      "projects": "Projects",
+      "countries": "Countries",
+      "team": "Team members"
+    }
+  },
+  "cases": {
+    "eyebrow": "Cases",
+    "title": "Selected work",
+    "description": "Real outcomes for real businesses — products we shipped alongside teams that trusted us.",
+    "viewAll": "All cases",
+    "viewCase": "Open case"
+  },
+  "why": {
+    "eyebrow": "Why us",
+    "title": "Why ITGroup",
+    "items": {
+      "senior": { "title": "Senior team", "description": "Not a junior school — engineers and designers grown in production." },
+      "transparent": { "title": "Transparent process", "description": "Real-time progress, open backlog, predictable estimate." },
+      "support": { "title": "Beyond launch", "description": "We stay after release — SLA and product growth." },
+      "global": { "title": "EU + UZ presence", "description": "Tashkent and Berlin — close expertise, global standards." },
+      "flexible": { "title": "Flexible engagement", "description": "Fixed-price, T&M or dedicated team — the format that fits you." },
+      "secure": { "title": "Security first", "description": "NDA, GDPR, ISO 27001 practices — code and data safety." }
+    }
+  },
+  "testimonials": {
+    "eyebrow": "Clients",
+    "title": "What clients say",
+    "items": {
+      "1": {
+        "quote": "ITGroup shipped our ERP in 11 weeks — we thought we needed a year.",
+        "author": "Bekzod Rakhimov",
+        "role": "COO, TransLogix"
+      },
+      "2": {
+        "quote": "We didn't get a CRM — we got our sales operation rebuilt. Conversion +42%.",
+        "author": "Nodira Yusupova",
+        "role": "Sales Director, Markaz Market"
+      },
+      "3": {
+        "quote": "WebApp + Click + Payme — over 12,000 users in the first week.",
+        "author": "Anvar Karimov",
+        "role": "CTO, TenzorPay"
+      }
+    }
+  },
+  "cta": {
+    "eyebrow": "Shall we?",
+    "title": "Build your product with us",
+    "description": "A 30-minute free consultation — technical scoping, estimate and the right team.",
+    "primary": "Free consultation",
+    "secondary": "Message on Telegram"
+  },
+  "footer": {
+    "tagline": "We connect business and technology.",
+    "company": "Company",
+    "services": "Services",
+    "contact": "Contact",
+    "newsletter": "Newsletter",
+    "newsletterDesc": "Once a month — new work, ideas, observations.",
+    "subscribe": "Subscribe",
+    "rights": "All rights reserved.",
+    "privacy": "Privacy",
+    "terms": "Terms"
+  },
+  "service": {
+    "backToServices": "Back to services",
+    "deliverables": "What we build",
+    "stack": "Tech stack",
+    "process": "Process",
+    "startProject": "Order this service"
+  },
+  "contact": {
+    "eyebrow": "Order",
+    "title": "Order a service",
+    "description": "Choose a service and leave your contact — we'll get back within 24 hours.",
+    "form": {
+      "stepService": "Choose a service",
+      "stepContact": "Your contact",
+      "firstName": "First name",
+      "firstNamePlaceholder": "Jamshid",
+      "lastName": "Last name",
+      "lastNamePlaceholder": "Karimov",
+      "phone": "Phone number",
+      "phonePlaceholder": "90 123 45 67",
+      "description": "Brief description",
+      "descriptionOptional": "optional",
+      "descriptionPlaceholder": "A few words about your project, budget or timeline...",
+      "descriptionPlaceholderOther": "Describe in detail what kind of solution you need...",
+      "other": "Other",
+      "otherTagline": "If none of the services above fit",
+      "submit": "Place order",
+      "sending": "Sending...",
+      "successTitle": "Thank you!",
+      "successDesc": "We've received your request and will be in touch within 24 hours.",
+      "newOrder": "New order",
+      "validation": {
+        "service": "Please choose a service",
+        "firstName": "Enter your first name (min 2 chars)",
+        "lastName": "Enter your last name (min 2 chars)",
+        "phone": "Enter a valid phone number"
+      }
+    },
+    "channels": {
+      "title": "Direct channels",
+      "phone": "Phone",
+      "telegram": "Telegram",
+      "instagram": "Instagram",
+      "email": "Email"
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Welcome back",
+      "subtitle": "Sign in to continue",
+      "email": "Email",
+      "password": "Password",
+      "submit": "Sign in",
+      "forgot": "Forgot password?",
+      "noAccount": "No account?",
+      "register": "Sign up"
+    },
+    "register": {
+      "title": "Create account",
+      "subtitle": "Get started in a minute",
+      "name": "Full name",
+      "email": "Email",
+      "password": "Password",
+      "submit": "Create account",
+      "haveAccount": "Already have an account?",
+      "login": "Sign in"
+    }
+  },
+  "about": {
+    "eyebrow": "About",
+    "title": "Technology is our language, business is yours",
+    "lead": "ITGroup is a software studio based in Uzbekistan and Germany. We build CRM, ERP, mobile apps, websites, Telegram bots and AI integrations at engineering grade.",
+    "mission": {
+      "title": "Our mission",
+      "description": "Bring simple, reliable and fast technology to mid-market and enterprise — without the noise."
+    },
+    "values": {
+      "title": "Our values",
+      "items": {
+        "craft": { "title": "Craft", "description": "Every pixel, every endpoint — considered." },
+        "ownership": { "title": "Ownership", "description": "We don't ship code — we ship outcomes." },
+        "speed": { "title": "Speed", "description": "Quality, but quickly. The sprint is our regular cadence." },
+        "honesty": { "title": "Honesty", "description": "We tell the truth about scope, deadlines and trade-offs." }
+      }
+    },
+    "team": {
+      "title": "Team",
+      "description": "Senior engineers, designers and product managers — 4 to 8 people per mid-size project."
+    }
+  },
+  "casesPage": {
+    "eyebrow": "Cases",
+    "title": "What we shipped with our clients",
+    "filterAll": "All"
+  },
+  "admin": {
+    "sidebar": {
+      "main": "Main",
+      "management": "Management",
+      "dashboard": "Dashboard",
+      "leads": "Leads",
+      "clients": "Clients",
+      "projects": "Projects",
+      "users": "Users",
+      "settings": "Settings",
+      "logout": "Sign out"
+    },
+    "topbar": {
+      "search": "Search...",
+      "notifications": "Notifications"
+    },
+    "dashboard": {
+      "title": "Dashboard",
+      "subtitle": "Real-time business metrics",
+      "stats": {
+        "leads": "Total leads",
+        "newWeek": "New this week",
+        "inProgress": "In progress",
+        "closed": "Closed"
+      },
+      "recentLeads": "Recent leads",
+      "viewAll": "View all",
+      "leadsOverTime": "Leads over time",
+      "serviceMix": "Service mix"
+    },
+    "leads": {
+      "title": "Leads",
+      "subtitle": "Sales pipeline — all stages",
+      "search": "Phone, name, email or service...",
+      "tabs": {
+        "all": "All",
+        "new": "New",
+        "contacted": "Contacted",
+        "qualified": "Qualified",
+        "inProgress": "In progress",
+        "won": "Won",
+        "lost": "Lost"
+      },
+      "view": { "table": "Table", "kanban": "Kanban" },
+      "table": {
+        "id": "ID",
+        "client": "Client",
+        "service": "Service",
+        "source": "Source",
+        "date": "Date",
+        "status": "Status",
+        "actions": "Actions"
+      },
+      "drawer": {
+        "contact": "Contact info",
+        "request": "Request",
+        "status": "Status",
+        "comments": "Internal notes",
+        "timeline": "Timeline",
+        "save": "Save"
+      }
+    },
+    "users": {
+      "title": "Users",
+      "subtitle": "Team and access",
+      "addUser": "New user",
+      "search": "Name or email...",
+      "table": {
+        "name": "Name",
+        "email": "Email",
+        "role": "Role",
+        "status": "Status",
+        "created": "Created",
+        "actions": "Actions"
+      }
+    },
+    "settings": {
+      "title": "Settings",
+      "subtitle": "Account, security and notifications",
+      "profile": "Profile",
+      "security": "Security",
+      "notifications": "Notifications",
+      "appearance": "Appearance",
+      "save": "Save"
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "viewMore": "View more",
+    "comingSoon": "Coming soon"
+  }
+}

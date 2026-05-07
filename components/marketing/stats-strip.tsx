@@ -6,10 +6,10 @@ import { useEffect, useRef, useState } from 'react';
 import { Section, SectionHeading } from '@/components/ui/section';
 
 const items = [
-  { key: 'years', target: 8, suffix: '+' },
+  { key: 'years', target: 3, suffix: '' },
   { key: 'projects', target: 50, suffix: '+' },
-  { key: 'countries', target: 12, suffix: '' },
-  { key: 'team', target: 38, suffix: '' },
+  { key: 'countries', target: 2, suffix: '' },
+  { key: 'team', target: 12, suffix: '' },
 ] as const;
 
 function Counter({ to, suffix = '' }: { to: number; suffix?: string }) {

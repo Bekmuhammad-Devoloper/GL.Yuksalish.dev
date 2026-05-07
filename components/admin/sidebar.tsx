@@ -17,7 +17,7 @@ import {
   X,
   type LucideIcon,
 } from 'lucide-react';
-import { Logo, LogoMark } from '@/components/brand/logo';
+import { LogoMark } from '@/components/brand/logo';
 import { cn } from '@/lib/utils';
 import { logout } from '@/lib/auth';
 import { useRouter } from 'next/navigation';
@@ -69,7 +69,16 @@ export function AdminSidebar({
     >
       <div className="flex h-16 items-center justify-between border-b border-border/60 px-4">
         <Link href={main[0].href} className="flex items-center">
-          {collapsed ? <LogoMark /> : <Logo />}
+          {collapsed ? (
+            <LogoMark />
+          ) : (
+            <span className="inline-flex items-center gap-2.5">
+              <LogoMark />
+              <span className="font-display text-[15px] font-semibold tracking-tight">
+                Germaniya Live
+              </span>
+            </span>
+          )}
         </Link>
         <button
           onClick={onToggle}
@@ -164,8 +173,11 @@ export function AdminMobileSidebar({
             className="fixed left-0 top-0 z-50 flex h-screen w-[80%] max-w-[300px] flex-col border-r border-border/60 bg-card shadow-2xl lg:hidden"
           >
             <div className="flex h-16 items-center justify-between border-b border-border/60 px-4">
-              <Link href={main[0].href} onClick={onClose}>
-                <Logo />
+              <Link href={main[0].href} onClick={onClose} className="inline-flex items-center gap-2.5">
+                <LogoMark />
+                <span className="font-display text-[15px] font-semibold tracking-tight">
+                  Germaniya Live
+                </span>
               </Link>
               <button
                 onClick={onClose}

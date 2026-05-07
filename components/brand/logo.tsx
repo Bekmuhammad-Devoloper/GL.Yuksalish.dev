@@ -8,21 +8,17 @@ type LogoProps = {
 };
 
 export function Logo({ className, variant = 'full', monochrome = false }: LogoProps) {
+  if (variant === 'mark') {
+    return <LogoMark className={className} monochrome={monochrome} />;
+  }
   return (
-    <div className={cn('inline-flex items-center', className)}>
-      {variant === 'full' ? (
-        <Image
-          src="/logo.svg"
-          alt="Germaniya Live"
-          width={200}
-          height={40}
-          className="h-10 w-auto"
-          style={monochrome ? { filter: 'grayscale(1)' } : undefined}
-        />
-      ) : (
-        <LogoMark monochrome={monochrome} />
-      )}
-    </div>
+    <span className={cn('inline-flex items-center gap-3', className)}>
+      <LogoMark monochrome={monochrome} className="h-12 w-12" />
+      <span className="font-display font-bold leading-[0.92] tracking-tight">
+        <span className="block text-[18px]">GERMANIYA</span>
+        <span className="block text-[18px]">LIVE</span>
+      </span>
+    </span>
   );
 }
 
@@ -35,11 +31,11 @@ export function LogoMark({
 }) {
   return (
     <Image
-      src="/logo.svg"
+      src="/logo-mark.svg"
       alt="Germaniya Live"
-      width={160}
-      height={32}
-      className={cn('h-8 w-auto', className)}
+      width={96}
+      height={96}
+      className={cn('h-10 w-10 object-contain', className)}
       style={monochrome ? { filter: 'grayscale(1)' } : undefined}
     />
   );

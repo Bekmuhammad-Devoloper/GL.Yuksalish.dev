@@ -47,7 +47,7 @@ export function Navbar() {
         )}
       >
         <Link href={`/${locale}`} className="flex items-center gap-2 pr-4">
-          <Logo />
+          <Logo variant="mark" />
         </Link>
 
         <ul className="hidden items-center gap-1 md:flex">

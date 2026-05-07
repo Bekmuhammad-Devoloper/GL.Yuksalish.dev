@@ -3,7 +3,7 @@
 import * as React from 'react';
 import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
-import { User, Lock, Bell, Palette } from 'lucide-react';
+import { User, Lock, Bell, Palette, type LucideIcon } from 'lucide-react';
 import { AdminTopbar } from '@/components/admin/topbar';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
@@ -132,7 +132,7 @@ function SettingCard({
 }: {
   id: string;
   title: string;
-  icon: React.ComponentType<{ className?: string; strokeWidth?: number }>;
+  icon: LucideIcon;
   children: React.ReactNode;
 }) {
   return (

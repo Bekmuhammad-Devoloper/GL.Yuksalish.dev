@@ -13,6 +13,7 @@ import {
   Phone,
   Mail,
   Clock,
+  type LucideIcon,
 } from 'lucide-react';
 import { AdminTopbar } from '@/components/admin/topbar';
 import { Input } from '@/components/ui/input';
@@ -392,7 +393,7 @@ function ContactRow({
   icon: Icon,
   value,
 }: {
-  icon: React.ComponentType<{ className?: string; strokeWidth?: number }>;
+  icon: LucideIcon;
   value: string;
 }) {
   return (

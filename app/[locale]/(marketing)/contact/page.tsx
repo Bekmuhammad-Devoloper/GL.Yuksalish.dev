@@ -17,6 +17,7 @@ import {
   ArrowRight,
   ArrowUpRight,
   MoreHorizontal,
+  type LucideIcon,
 } from 'lucide-react';
 import { Section, SectionHeading } from '@/components/ui/section';
 import { Input } from '@/components/ui/input';
@@ -302,7 +303,7 @@ function ServiceTile({
   onClick,
 }: {
   slug: string;
-  icon: React.ComponentType<{ className?: string; strokeWidth?: number }>;
+  icon: LucideIcon;
   title: string;
   tagline: string;
   active: boolean;
@@ -423,7 +424,7 @@ function Channel({
   value,
   href,
 }: {
-  icon: React.ComponentType<{ className?: string; strokeWidth?: number }>;
+  icon: LucideIcon;
   label: string;
   value: string;
   href: string;

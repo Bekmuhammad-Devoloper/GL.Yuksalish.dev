@@ -15,6 +15,7 @@ import {
   LogOut,
   ChevronLeft,
   X,
+  type LucideIcon,
 } from 'lucide-react';
 import { Logo, LogoMark } from '@/components/brand/logo';
 import { cn } from '@/lib/utils';
@@ -23,7 +24,7 @@ import { useRouter } from 'next/navigation';
 
 type NavConfig = {
   href: string;
-  icon: React.ComponentType<{ className?: string; strokeWidth?: number }>;
+  icon: LucideIcon;
   label: string;
   badge?: number;
 };

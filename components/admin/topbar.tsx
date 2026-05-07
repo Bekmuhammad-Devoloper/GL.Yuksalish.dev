@@ -18,6 +18,7 @@ import {
   Sparkles,
   Check,
   RadioTower,
+  type LucideIcon,
 } from 'lucide-react';
 import { ThemeToggle } from '@/components/ui/theme-toggle';
 import { LanguageSwitcher } from '@/components/ui/language-switcher';
@@ -38,7 +39,7 @@ import {
 } from '@/lib/mock-notifications';
 import { cn } from '@/lib/utils';
 
-const KIND_ICON: Record<NotificationKind, React.ComponentType<{ className?: string; strokeWidth?: number }>> = {
+const KIND_ICON: Record<NotificationKind, LucideIcon> = {
   lead: Inbox,
   message: MessageSquare,
   project: FolderKanban,

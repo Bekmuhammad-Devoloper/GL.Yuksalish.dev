@@ -334,7 +334,8 @@ function LeadsChart() {
 }
 
 function StatusBadge({ status }: { status: string }) {
-  const variantMap: Record<string, string> = {
+  type BadgeVariant = 'default' | 'secondary' | 'warning' | 'success' | 'muted';
+  const variantMap: Record<string, BadgeVariant> = {
     new: 'default',
     contacted: 'secondary',
     qualified: 'warning',
@@ -342,7 +343,7 @@ function StatusBadge({ status }: { status: string }) {
     won: 'success',
     lost: 'muted',
   };
-  const variant = variantMap[status] ?? 'default';
+  const variant: BadgeVariant = variantMap[status] ?? 'default';
 
   return (
     <Badge variant={variant} className="capitalize">

@@ -31,7 +31,7 @@ export function LogoMark({
 }) {
   return (
     <Image
-      src="/logo-mark.svg"
+      src="/favicon.svg"
       alt="Germaniya Live"
       width={96}
       height={96}

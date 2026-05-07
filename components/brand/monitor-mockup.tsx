@@ -110,7 +110,7 @@ export function MonitorMockup({ className }: MonitorMockupProps) {
                     {/* transparent logo — sits directly on the dark canvas */}
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
-                      src="/logo.svg"
+                      src="/favicon.svg"
                       alt="GERMANIYA LIVE"
                       width={420}
                       height={420}

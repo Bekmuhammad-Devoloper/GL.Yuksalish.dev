@@ -66,46 +66,28 @@ export function MonitorMockup({ className }: MonitorMockupProps) {
           {/* bezel */}
           <div className="relative rounded-[20px] bg-zinc-950 p-[6px]">
             {/* screen */}
-            <div className="relative aspect-[16/10] overflow-hidden rounded-[16px] bg-zinc-950">
-              {/* screen content backdrop */}
-              <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_hsl(20_30%_15%),_hsl(20_15%_6%)_70%)]">
-                {/* faux app chrome — design tool top bar */}
-                <div className="flex items-center gap-1.5 border-b border-white/5 px-3 py-2.5">
-                  <span className="h-2.5 w-2.5 rounded-full bg-red-500/90" />
-                  <span className="h-2.5 w-2.5 rounded-full bg-amber-400/90" />
-                  <span className="h-2.5 w-2.5 rounded-full bg-emerald-400/90" />
-                  <div className="ml-3 hidden flex-1 items-center justify-center gap-2 text-[9px] font-medium uppercase tracking-wider text-white/40 sm:flex">
-                    <span className="font-mono">germaniya-live.svg</span>
-                  </div>
-                </div>
-
-                {/* logo filling the full screen */}
-                <div className="absolute inset-x-0 bottom-0 top-9">
-                  <motion.div
-                    initial={{ opacity: 0, scale: 0.96 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{
-                      duration: 1.2,
-                      ease: [0.16, 1, 0.3, 1],
-                      delay: 0.2,
-                    }}
-                    className="h-full w-full"
-                  >
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img
-                      src="/favicon.svg"
-                      alt="GERMANIYA LIVE"
-                      width={640}
-                      height={640}
-                      className="h-full w-full select-none object-contain"
-                      draggable={false}
-                    />
-                  </motion.div>
-                </div>
-
-                {/* subtle glare */}
-                <div className="pointer-events-none absolute -top-1/2 left-0 h-full w-1/3 -rotate-12 bg-gradient-to-b from-white/20 to-transparent blur-2xl" />
-              </div>
+            <div className="relative aspect-[16/10] overflow-hidden rounded-[16px] bg-white">
+              {/* logo filling the full screen */}
+              <motion.div
+                initial={{ opacity: 0, scale: 0.96 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{
+                  duration: 1.2,
+                  ease: [0.16, 1, 0.3, 1],
+                  delay: 0.2,
+                }}
+                className="absolute inset-0 flex items-center justify-center"
+              >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/favicon.svg"
+                  alt="GERMANIYA LIVE"
+                  width={640}
+                  height={640}
+                  className="h-full w-full select-none object-cover"
+                  draggable={false}
+                />
+              </motion.div>
             </div>
           </div>
 

@@ -6,6 +6,7 @@ export type CaseStudy = {
   year: number;
   service: string;
   cover: string;
+  link?: string;
   metrics: { label: string; value: string }[];
 };
 
@@ -18,6 +19,7 @@ export const cases: CaseStudy[] = [
     year: 2025,
     service: 'crm',
     cover: '/banner(imkon).png',
+    link: 'https://imkon-live.bekmuhammad.uz',
     metrics: [
       { label: 'Manual ops cut', value: '−80%' },
       { label: 'Roles unified', value: '5' },
@@ -27,13 +29,14 @@ export const cases: CaseStudy[] = [
   {
     slug: 'retail-crm',
     client: 'Markaz Market',
+    subtitle: 'CRM tizimlari',
     vertical: 'Retail',
     year: 2025,
     service: 'crm',
-    cover:
-      'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=1200&q=80',
+    cover: '/banner(marja edu).png',
+    link: 'https://marjagroup.uz',
     metrics: [
-      { label: 'Lead → close', value: '+42%' },
+      { label: 'LEAD → CLOSE', value: '+42%' },
       { label: 'Response time', value: '< 4 min' },
       { label: 'Agents onboarded', value: '120' },
     ],

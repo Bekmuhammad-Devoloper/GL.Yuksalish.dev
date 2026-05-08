@@ -2,6 +2,7 @@
 
 import * as React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { useLocale, useTranslations } from 'next-intl';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Section, SectionHeading } from '@/components/ui/section';
@@ -72,42 +73,53 @@ export default function CasesPage() {
                   transition={{ duration: 0.5, delay: idx * 0.04, ease: [0.16, 1, 0.3, 1] }}
                   className="group overflow-hidden rounded-3xl border border-border/60 bg-card transition-shadow hover:shadow-glow-soft"
                 >
-                  <div className="relative aspect-[16/10] w-full overflow-hidden">
-                    <Image
-                      src={c.cover}
-                      alt={c.client}
-                      fill
-                      sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-                      className="object-cover transition-transform duration-700 group-hover:scale-105"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                  </div>
-                  <div className="p-5">
-                    <div className="flex items-center justify-between">
-                      <Badge variant="secondary">{c.vertical}</Badge>
-                      <span className="font-mono text-xs text-muted-foreground">
-                        {c.year}
-                      </span>
-                    </div>
-                    <h3 className="mt-3 font-display text-xl font-semibold tracking-tight">
-                      {c.client}
-                    </h3>
-                    <p className="mt-1 text-sm text-muted-foreground">
-                      {tServices(`${c.service}.title` as any)}
-                    </p>
-                    <div className="mt-4 grid grid-cols-3 gap-2 border-t border-border/60 pt-4">
-                      {c.metrics.map((m) => (
-                        <div key={m.label}>
-                          <p className="font-display text-base font-semibold tracking-tight">
-                            {m.value}
-                          </p>
-                          <p className="text-[10px] uppercase tracking-wider text-muted-foreground">
-                            {m.label}
-                          </p>
+                  {(() => {
+                    const inner = (
+                      <>
+                        <div className="relative aspect-[16/10] w-full overflow-hidden">
+                          <Image
+                            src={c.cover}
+                            alt={c.client}
+                            fill
+                            sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                            className="object-cover transition-transform duration-700 group-hover:scale-105"
+                          />
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                         </div>
-                      ))}
-                    </div>
-                  </div>
+                        <div className="p-5">
+                          <div className="flex items-center justify-between">
+                            <Badge variant="secondary">{c.vertical}</Badge>
+                            <span className="font-mono text-xs text-muted-foreground">
+                              {c.year}
+                            </span>
+                          </div>
+                          <h3 className="mt-3 font-display text-xl font-semibold tracking-tight">
+                            {c.client}
+                          </h3>
+                          <p className="mt-1 text-sm text-muted-foreground">
+                            {tServices(`${c.service}.title` as any)}
+                          </p>
+                          <div className="mt-4 grid grid-cols-3 gap-2 border-t border-border/60 pt-4">
+                            {c.metrics.map((m) => (
+                              <div key={m.label}>
+                                <p className="font-display text-base font-semibold tracking-tight">
+                                  {m.value}
+                                </p>
+                                <p className="text-[10px] uppercase tracking-wider text-muted-foreground">
+                                  {m.label}
+                                </p>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      </>
+                    );
+                    return c.link ? (
+                      <Link href={c.link} target="_blank" rel="noopener noreferrer" className="block">
+                        {inner}
+                      </Link>
+                    ) : inner;
+                  })()}
                 </motion.article>
               ))}
             </AnimatePresence>

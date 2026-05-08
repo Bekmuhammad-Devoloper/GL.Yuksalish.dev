@@ -72,6 +72,8 @@ function FeaturedCase({
   t: ReturnType<typeof useTranslations>;
   tServices: ReturnType<typeof useTranslations>;
 }) {
+  const cardHref = study.link ?? href;
+  const isExternal = !!study.link;
   return (
     <motion.article
       initial={{ opacity: 0, y: 24 }}
@@ -81,7 +83,8 @@ function FeaturedCase({
       className="group relative overflow-hidden rounded-3xl border border-border bg-card shadow-card transition-all duration-500 hover:-translate-y-1 hover:shadow-glow-soft"
     >
       <Link
-        href={href}
+        href={cardHref}
+        {...(isExternal ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
         className="grid lg:grid-cols-[1.15fr_1fr] lg:items-stretch"
       >
         {/* IMAGE — left on desktop, top on mobile */}
@@ -176,6 +179,8 @@ function SupportingCase({
   index: number;
   tServices: ReturnType<typeof useTranslations>;
 }) {
+  const cardHref = study.link ?? href;
+  const isExternal = !!study.link;
   return (
     <motion.article
       initial={{ opacity: 0, y: 24 }}
@@ -188,7 +193,7 @@ function SupportingCase({
       }}
       className="group relative overflow-hidden rounded-3xl border border-border bg-card shadow-card transition-all duration-500 hover:-translate-y-1 hover:shadow-glow-soft"
     >
-      <Link href={href} className="block">
+      <Link href={cardHref} {...(isExternal ? { target: '_blank', rel: 'noopener noreferrer' } : {})} className="block">
         <div className="relative aspect-[16/11] w-full overflow-hidden">
           <Image
             src={study.cover}

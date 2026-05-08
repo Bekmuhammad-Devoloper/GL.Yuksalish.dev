@@ -99,7 +99,7 @@ export default function CasesPage() {
                           <p className="mt-1 text-sm text-muted-foreground">
                             {tServices(`${c.service}.title` as any)}
                           </p>
-                          <div className="mt-4 grid grid-cols-3 gap-2 border-t border-border/60 pt-4">
+                          <div className={`mt-4 grid gap-2 border-t border-border/60 pt-4 ${c.metrics.length === 4 ? 'grid-cols-2' : 'grid-cols-3'}`}>
                             {c.metrics.map((m) => (
                               <div key={m.label}>
                                 <p className="font-display text-base font-semibold tracking-tight">

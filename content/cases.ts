@@ -29,16 +29,17 @@ export const cases: CaseStudy[] = [
   {
     slug: 'retail-crm',
     client: 'Markaz Market',
-    subtitle: 'CRM tizimlari',
+    subtitle: 'Wildberries · Import · Uzum · Brend',
     vertical: 'Retail',
     year: 2025,
     service: 'crm',
     cover: '/banner(marja edu).png',
     link: 'https://marjagroup.uz',
     metrics: [
-      { label: 'LEAD → CLOSE', value: '+42%' },
-      { label: 'Response time', value: '< 4 min' },
-      { label: 'Agents onboarded', value: '120' },
+      { label: 'Wildberries savdosi', value: '+3.5x' },
+      { label: 'Import narxi', value: '−38%' },
+      { label: 'Uzum CTR', value: '+42%' },
+      { label: 'Brend tanilishi', value: '×2' },
     ],
   },
   {

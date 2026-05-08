@@ -142,7 +142,7 @@ function FeaturedCase({
           </div>
 
           {/* metrics — clean layout */}
-          <ul className="grid grid-cols-3 gap-3 border-t border-border pt-6 lg:gap-5">
+          <ul className={`grid gap-3 border-t border-border pt-6 lg:gap-5 ${study.metrics.length === 4 ? 'grid-cols-2 sm:grid-cols-4' : 'grid-cols-3'}`}>
             {study.metrics.map((m) => (
               <li key={m.label} className="min-w-0">
                 <p className="font-display text-xl font-semibold leading-none tracking-tight gradient-text-brand sm:text-2xl lg:text-3xl">
@@ -227,7 +227,7 @@ function SupportingCase({
           </span>
         </div>
 
-        <ul className="grid grid-cols-3 divide-x divide-border border-t border-border">
+        <ul className={`grid divide-x divide-border border-t border-border ${study.metrics.length === 4 ? 'grid-cols-2 sm:grid-cols-4' : 'grid-cols-3'}`}>
           {study.metrics.map((m) => (
             <li key={m.label} className="min-w-0 px-3 py-3.5 text-center">
               <p className="font-display text-base font-semibold tracking-tight sm:text-lg">

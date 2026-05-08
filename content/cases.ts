@@ -28,7 +28,7 @@ export const cases: CaseStudy[] = [
   },
   {
     slug: 'retail-crm',
-    client: 'Markaz Market',
+    client: 'Marja Edu',
     subtitle: 'Wildberries · Import · Uzum · Brend',
     vertical: 'Retail',
     year: 2025,

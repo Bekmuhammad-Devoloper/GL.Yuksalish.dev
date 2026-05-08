@@ -1,6 +1,7 @@
 export type CaseStudy = {
   slug: string;
   client: string;
+  subtitle?: string;
   vertical: string;
   year: number;
   service: string;
@@ -10,16 +11,17 @@ export type CaseStudy = {
 
 export const cases: CaseStudy[] = [
   {
-    slug: 'logistics-erp',
-    client: 'TransLogix',
-    vertical: 'Logistics',
+    slug: 'imkon-crm',
+    client: 'IMKON CRM',
+    subtitle: 'Mehnat migratsiyasi yechimlari',
+    vertical: 'CRM',
     year: 2025,
-    service: 'erp',
+    service: 'crm',
     cover:
-      'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1200&q=80',
+      'https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&q=80',
     metrics: [
-      { label: 'Manual ops cut', value: '−68%' },
-      { label: 'Branches unified', value: '14' },
+      { label: 'Manual ops cut', value: '−80%' },
+      { label: 'Roles unified', value: '5' },
       { label: 'Go-live', value: '11 wk' },
     ],
   },

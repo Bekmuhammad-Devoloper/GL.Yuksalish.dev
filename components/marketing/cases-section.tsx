@@ -128,7 +128,7 @@ function FeaturedCase({
                 {study.client}
               </h3>
               <p className="mt-3 text-sm text-muted-foreground sm:text-[15px]">
-                {tServices(`${study.service}.title` as any)} · {study.year}
+                {study.subtitle ?? tServices(`${study.service}.title` as any)} · {study.year}
               </p>
             </div>
 

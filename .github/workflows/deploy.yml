@@ -1,0 +1,72 @@
+name: Deploy to production
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-production
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: SSH and deploy
+        uses: appleboy/ssh-action@v1.2.0
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          port: ${{ secrets.SSH_PORT || 22 }}
+          username: ${{ secrets.SSH_USER }}
+          password: ${{ secrets.SSH_PASS }}
+          command_timeout: 15m
+          script_stop: true
+          script: |
+            set -e
+            PROJECT="/var/www/germaniya-live"
+            BRANCH="main"
+
+            cd "$PROJECT"
+
+            echo "::group::git pull"
+            git fetch origin "$BRANCH"
+            git checkout "$BRANCH"
+            git reset --hard "origin/$BRANCH"
+            git log --oneline -1
+            echo "::endgroup::"
+
+            echo "::group::npm install (only if deps changed)"
+            if git diff --name-only HEAD@{1} HEAD 2>/dev/null | grep -qE '(package\.json|package-lock\.json)$'; then
+              echo "deps changed - running npm install"
+              npm install --no-audit --no-fund
+            else
+              echo "no dep changes - skipping"
+            fi
+            echo "::endgroup::"
+
+            echo "::group::build"
+            npm run build
+            echo "::endgroup::"
+
+            echo "::group::reload only this project's pm2 processes"
+            IDS=$(pm2 jlist 2>/dev/null | python3 -c "
+            import json, sys
+            data = json.load(sys.stdin)
+            target = '$PROJECT'.rstrip('/')
+            for a in data:
+                cwd = (a.get('pm2_env',{}).get('pm_cwd') or '').rstrip('/')
+                if cwd == target or cwd.startswith(target + '/'):
+                    print(a['pm_id'], a['name'])
+            ")
+            if [ -z "$IDS" ]; then
+              echo "no pm2 process owns this project's cwd; nothing to reload"
+              exit 1
+            fi
+            echo "$IDS"
+            echo "$IDS" | awk '{print $1}' | while read pmid; do
+              pm2 reload "$pmid" --update-env
+            done
+            echo "::endgroup::"
+
+            echo "deploy done"

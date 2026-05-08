@@ -17,8 +17,7 @@ export const cases: CaseStudy[] = [
     vertical: 'CRM',
     year: 2025,
     service: 'crm',
-    cover:
-      'https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&q=80',
+    cover: '/banner(imkon).png',
     metrics: [
       { label: 'Manual ops cut', value: '−80%' },
       { label: 'Roles unified', value: '5' },

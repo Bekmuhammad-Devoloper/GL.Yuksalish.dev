@@ -97,4 +97,64 @@ export const cases: CaseStudy[] = [
       { label: 'Clinics', value: '23' },
     ],
   },
+  {
+    slug: 'wildberries-savdo',
+    client: 'Wildberries Savdosi',
+    subtitle: 'Wildberries savdosi A-Z',
+    vertical: 'E-commerce',
+    year: 2025,
+    service: 'crm',
+    cover:
+      'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80',
+    metrics: [
+      { label: 'Sotuvlar', value: '+3.5x' },
+      { label: 'Birinchi buyurtma', value: '12 kun' },
+      { label: 'Konversiya', value: '+68%' },
+    ],
+  },
+  {
+    slug: 'xitoy-import',
+    client: 'Xitoydan Import',
+    subtitle: 'Xitoydan import qilish',
+    vertical: 'Import',
+    year: 2025,
+    service: 'erp',
+    cover:
+      'https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1200&q=80',
+    metrics: [
+      { label: 'Tovar narxi', value: '−38%' },
+      { label: 'Birinchi partiya', value: '2.5M' },
+      { label: 'Yetkazish', value: '18 kun' },
+    ],
+  },
+  {
+    slug: 'uzum-dokon',
+    client: "Uzum Do'kon",
+    subtitle: "Uzum dokon ochish",
+    vertical: 'E-commerce',
+    year: 2025,
+    service: 'web',
+    cover:
+      'https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=1200&q=80',
+    metrics: [
+      { label: 'Kartochka CTR', value: '+42%' },
+      { label: "Do'kon ochish", value: '8 kun' },
+      { label: 'Sotuvlar o\'sishi', value: '+2.1x' },
+    ],
+  },
+  {
+    slug: 'brend-strategiyasi',
+    client: 'Brend Strategiyasi',
+    subtitle: 'Brend yaratish strategiyasi',
+    vertical: 'Marketing',
+    year: 2025,
+    service: 'ai',
+    cover:
+      'https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=1200&q=80',
+    metrics: [
+      { label: 'Brend tanilishi', value: '×2' },
+      { label: 'Onlayn sotuvlar', value: '+67%' },
+      { label: 'ROI', value: '4.2x' },
+    ],
+  },
 ];

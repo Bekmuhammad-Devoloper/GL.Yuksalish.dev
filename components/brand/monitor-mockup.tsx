@@ -66,15 +66,15 @@ export function MonitorMockup({ className }: MonitorMockupProps) {
           {/* bezel */}
           <div className="relative rounded-[20px] bg-zinc-950 p-[6px]">
             {/* screen */}
-            <div className="relative aspect-[16/10] overflow-hidden rounded-[16px] bg-white">
+            <div className="relative aspect-[16/10] overflow-hidden rounded-[16px] bg-zinc-950">
               {/* screen content backdrop */}
-              <div className="absolute inset-0 bg-white">
+              <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_hsl(20_30%_15%),_hsl(20_15%_6%)_70%)]">
                 {/* faux app chrome — design tool top bar */}
-                <div className="flex items-center gap-1.5 border-b border-black/8 bg-zinc-50 px-3 py-2.5">
+                <div className="flex items-center gap-1.5 border-b border-white/5 px-3 py-2.5">
                   <span className="h-2.5 w-2.5 rounded-full bg-red-500/90" />
                   <span className="h-2.5 w-2.5 rounded-full bg-amber-400/90" />
                   <span className="h-2.5 w-2.5 rounded-full bg-emerald-400/90" />
-                  <div className="ml-3 hidden flex-1 items-center justify-center gap-2 text-[9px] font-medium uppercase tracking-wider text-black/30 sm:flex">
+                  <div className="ml-3 hidden flex-1 items-center justify-center gap-2 text-[9px] font-medium uppercase tracking-wider text-white/40 sm:flex">
                     <span className="font-mono">germaniya-live.svg</span>
                   </div>
                 </div>

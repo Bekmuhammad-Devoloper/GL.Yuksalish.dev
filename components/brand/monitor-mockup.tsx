@@ -19,13 +19,6 @@ export function MonitorMockup({ className }: MonitorMockupProps) {
 
   const rotateY = useTransform(sx, [0, 1], [-7, 7]);
   const rotateX = useTransform(sy, [0, 1], [5, -5]);
-  const glowX = useTransform(sx, [0, 1], ['30%', '70%']);
-  const glowY = useTransform(sy, [0, 1], ['30%', '70%']);
-  const spotlight = useTransform(
-    [glowX, glowY],
-    ([x, y]) =>
-      `radial-gradient(circle at ${x} ${y}, hsl(28 100% 62% / 0.18), transparent 55%)`,
-  );
 
   useEffect(() => {
     const el = containerRef.current;
@@ -73,58 +66,45 @@ export function MonitorMockup({ className }: MonitorMockupProps) {
           {/* bezel */}
           <div className="relative rounded-[20px] bg-zinc-950 p-[6px]">
             {/* screen */}
-            <div className="relative aspect-[16/10] overflow-hidden rounded-[16px] bg-zinc-950">
+            <div className="relative aspect-[16/10] overflow-hidden rounded-[16px] bg-white">
               {/* screen content backdrop */}
-              <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_hsl(20_30%_15%),_hsl(20_15%_6%)_70%)]">
+              <div className="absolute inset-0 bg-white">
                 {/* faux app chrome — design tool top bar */}
-                <div className="flex items-center gap-1.5 border-b border-white/5 px-3 py-2.5">
+                <div className="flex items-center gap-1.5 border-b border-black/8 bg-zinc-50 px-3 py-2.5">
                   <span className="h-2.5 w-2.5 rounded-full bg-red-500/90" />
                   <span className="h-2.5 w-2.5 rounded-full bg-amber-400/90" />
                   <span className="h-2.5 w-2.5 rounded-full bg-emerald-400/90" />
-                  <div className="ml-3 hidden flex-1 items-center justify-center gap-2 text-[9px] font-medium uppercase tracking-wider text-white/40 sm:flex">
+                  <div className="ml-3 hidden flex-1 items-center justify-center gap-2 text-[9px] font-medium uppercase tracking-wider text-black/30 sm:flex">
                     <span className="font-mono">germaniya-live.svg</span>
                   </div>
                 </div>
 
-                {/* spotlight following cursor */}
-                <motion.div
-                  className="pointer-events-none absolute inset-0"
-                  style={{ background: spotlight }}
-                />
-
-                {/* logo floating in the dark workspace */}
-                <div className="absolute inset-x-0 bottom-0 top-9 flex items-center justify-center p-6 sm:p-8">
+                {/* logo filling the full screen */}
+                <div className="absolute inset-x-0 bottom-0 top-9">
                   <motion.div
-                    initial={{ opacity: 0, scale: 0.92, y: 12 }}
-                    animate={{ opacity: 1, scale: 1, y: 0 }}
+                    initial={{ opacity: 0, scale: 0.96 }}
+                    animate={{ opacity: 1, scale: 1 }}
                     transition={{
-                      duration: 1.4,
+                      duration: 1.2,
                       ease: [0.16, 1, 0.3, 1],
                       delay: 0.2,
                     }}
-                    className="relative flex h-full w-full items-center justify-center"
+                    className="h-full w-full"
                   >
-                    {/* breathing orange glow behind the mark */}
-                    <div className="absolute inset-x-8 inset-y-2 -z-0 animate-breathe rounded-[40%] bg-[hsl(20_95%_54%/0.45)] blur-3xl" />
-
-                    {/* transparent logo — sits directly on the dark canvas */}
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       src="/favicon.svg"
                       alt="GERMANIYA LIVE"
-                      width={420}
-                      height={420}
-                      className="relative z-10 h-full w-auto select-none object-contain drop-shadow-[0_0_36px_hsl(20_95%_54%/0.45)]"
+                      width={640}
+                      height={640}
+                      className="h-full w-full select-none object-contain"
                       draggable={false}
                     />
                   </motion.div>
                 </div>
 
-                {/* faint scan-line */}
-                <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,transparent_0%,transparent_50%,hsl(0_0%_100%/0.02)_50%,transparent_100%)] bg-[length:100%_4px]" />
-
-                {/* glare */}
-                <div className="pointer-events-none absolute -top-1/2 left-0 h-full w-1/3 -rotate-12 bg-gradient-to-b from-white/10 to-transparent blur-2xl" />
+                {/* subtle glare */}
+                <div className="pointer-events-none absolute -top-1/2 left-0 h-full w-1/3 -rotate-12 bg-gradient-to-b from-white/20 to-transparent blur-2xl" />
               </div>
             </div>
           </div>

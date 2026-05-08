@@ -67,7 +67,7 @@ export function MonitorMockup({ className }: MonitorMockupProps) {
           <div className="relative rounded-[20px] bg-zinc-950 p-[6px]">
             {/* screen */}
             <div className="relative aspect-[16/10] overflow-hidden rounded-[16px] bg-white">
-              {/* logo filling the full screen */}
+              {/* logo centered, fully visible */}
               <motion.div
                 initial={{ opacity: 0, scale: 0.96 }}
                 animate={{ opacity: 1, scale: 1 }}
@@ -76,7 +76,7 @@ export function MonitorMockup({ className }: MonitorMockupProps) {
                   ease: [0.16, 1, 0.3, 1],
                   delay: 0.2,
                 }}
-                className="absolute inset-0 flex items-center justify-center"
+                className="absolute inset-0 flex items-center justify-center p-8"
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
@@ -84,7 +84,7 @@ export function MonitorMockup({ className }: MonitorMockupProps) {
                   alt="GERMANIYA LIVE"
                   width={640}
                   height={640}
-                  className="h-full w-full select-none object-cover"
+                  className="h-full w-full select-none object-contain"
                   draggable={false}
                 />
               </motion.div>
